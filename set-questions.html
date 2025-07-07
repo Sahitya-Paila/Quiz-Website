@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Questions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="questionsAdd.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+    <h2>Add Questions to Quiz</h2>
+
+    <input type="text" id="question" placeholder="Enter question" />
+    <input type="text" id="opt1" placeholder="Option 1" />
+    <input type="text" id="opt2" placeholder="Option 2" />
+    <input type="text" id="opt3" placeholder="Option 3" />
+    <input type="text" id="opt4" placeholder="Option 4" />
+    <input type="text" id="correct" placeholder="Correct Answer (must match one option)" />
+
+    <button onclick="addQuestion()">Add Question</button>
+    <p id="error-msg" class="error-text"></p>
+
+    <div class="question-list" id="question-list"></div>
+
+    <button onclick="finalizeQuiz()" class="save-btn">Save Quiz</button>
+  </div>
+
+  <script src="addQuestions.js"></script>
+</body>
+</html>
