@@ -1,1 +1,11 @@
-//hi
+.error-text {
+  color: red;
+}
+
+.save-btn {
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
