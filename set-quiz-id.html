@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Quiz ID</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+    <h2>Set Quiz ID & Duration</h2>
+
+    <label for="quiz-id">Quiz ID</label>
+    <input type="text" id="quiz-id" placeholder="Enter unique quiz ID (e.g. QUIZ2025)" required />
+
+    <label for="duration">Duration (in minutes)</label>
+    <input type="number" id="duration" placeholder="Duration in minutes" min="1" required />
+
+    <button onclick="goToQuestionPage()">Continue</button>
+    <p id="error-msg" class="error-text"></p>
+  </div>
+
+  <script src="setter.js"></script>
+</body>
+
+</html>
