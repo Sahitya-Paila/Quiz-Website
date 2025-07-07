@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Answer Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="answerQuiz.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+    <div id="start-screen">
+      <h2>Enter Quiz Details</h2>
+      <form onsubmit="event.preventDefault(); startQuiz();">
+        <label for="quiz-id">Quiz ID</label>
+        <input id="quiz-id" placeholder="Enter Quiz ID" required />
+
+        <label for="user-id">User ID</label>
+        <input id="user-id" placeholder="Enter Unique User ID" required />
+
+        <button type="submit">Start Quiz</button>
+        <p id="start-error" class="error-text"></p>
+      </form>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div class="timer" id="timer-box">Reading Time: 30</div>
+
+      <div class="question-box">
+        <p id="question-text"></p>
+        <ul id="options"></ul>
+      </div>
+
+      <div class="leaderboard hidden" id="leaderboard-box">
+        <h4>Live Leaderboard</h4>
+        <ul id="leaderboard-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="answerQuiz.js"></script>
+</body>
+
+</html>
